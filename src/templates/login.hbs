@@ -1,0 +1,49 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <h1 class="auth-title">Вход</h1>
+    
+    <form id="loginForm" class="auth-form">
+      <div class="form-field">
+        <label class="form-label" for="login">Логин</label>
+        <input 
+          type="text" 
+          id="login" 
+          class="form-input"
+          placeholder="Введите логин"
+          required
+        >
+      </div>
+      
+      <div class="form-field">
+        <label class="form-label" for="password">Пароль</label>
+        <input 
+          type="password" 
+          id="password" 
+          class="form-input"
+          placeholder="Введите пароль"
+          required
+        >
+      </div>
+      
+      <button type="submit" class="auth-button">
+        Войти
+      </button>
+    </form>
+    
+    <a href="#" class="auth-link" id="goToRegister">
+      Нет аккаунта?
+    </a>
+    <!-- В конце auth-card, после ссылки "Нет аккаунта?" добавь: -->
+<div class="test-buttons" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+  <p style="font-size: 11px; color: #999; margin-bottom: 10px;">Тестовые страницы:</p>
+  <button id="test404" style="background: #999; color: white; border: none; padding: 8px 12px; 
+        border-radius: 4px; font-size: 11px; margin-right: 10px; cursor: pointer;">
+    Тест 404
+  </button>
+  <button id="test500" style="background: #999; color: white; border: none; padding: 8px 12px; 
+        border-radius: 4px; font-size: 11px; cursor: pointer;">
+    Тест 500
+  </button>
+</div>
+  </div>
+</div>

@@ -1,0 +1,160 @@
+$primary-color: #0048ff;
+$error-color: #FF2F2F;
+$gray-color: #999;
+$background-color: #a19df4;
+$black-color: #000000;
+$in-color: #407d60;
+$link-color: #5b5252;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: $background-color; 
+  min-height: 100vh;
+}
+
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: $background-color; 
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: $black-color;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.form-input {
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid $in-color;
+  font-size: 13px;
+  outline: none;
+  
+  &::placeholder {
+    color: #999;
+  }
+  
+  &.error {
+    border-bottom-color: $error-color;
+  }
+}
+
+.error-message {
+  color: $error-color;
+  font-size: 9px;
+  margin-top: 4px;
+  min-height: 12px;
+}
+
+.auth-button {
+  background: $in-color;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.auth-link {
+  display: block;
+  text-align: center;
+  color: $link-color;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $background-color; 
+  padding: 20px;
+}
+
+.error-container {
+  text-align: center;
+  max-width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+}
+
+.error-code {
+  font-size: 80px;
+  color: #3369F3;
+  margin: 0;
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #1E1E1E;
+}
+
+.error-message {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.error-link {
+  display: inline-block;
+  color: #3369F3;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 1px solid #3369F3;
+  border-radius: 8px;
+  
+  &:hover {
+    background: #3369F3;
+    color: white;
+  }
+}
