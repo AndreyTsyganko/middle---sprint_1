@@ -8,7 +8,14 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        '404': '404.html',
+        '500': '500.html'
+      }
+    }
   },
   css: {
     preprocessorOptions: {
